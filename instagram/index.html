@@ -5,8 +5,9 @@
         <style>
             .container {
                 display: flex;
-                align-items: flex-start;
+                align-items: column;
                 padding-left: 1%;
+                font-family: 'Poppins', 'Proxima Nova', 'Montserrat', sans-serif;
             }
 
             .menu {
@@ -20,6 +21,15 @@
                 height: 774px;
                 margin-left: 20px;
                 padding-top: 0px;
+            }
+
+            .posts {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                width: 490px;
+                margin: 450px;
+                margin-top: 10px;
             }
 
         </style>
@@ -48,16 +58,99 @@
 
             <div class="vertical-line"></div>
 
-            <div style = "align-items: center; margin-left: 32%; margin-top: 30px;">
-                <img
-                    src = "my-notion-face-portrait.png"
-                    alt = "profile pic"
-                    style="width: 100px; height: 100px; border-radius: 50%; border: 1px solid rgb(196, 195, 195);"
-                >
 
-                <h3>
-                    suhani! 
-                </h3>
+            <div style = "display: flex; flex-direction: column;">
+                <div style="display: flex; flex-direction: row;">
+                    <!--made a new flex thing so the bio could wrap. so like within columns i made one big row and then another box for pfp-->
+                    <div style = "display: flex; flex-direction: row; align-items: flex-start; margin-left: 400px; margin-top: 80px;">
+                        <img
+                            src = "my-notion-face-portrait.png"
+                            alt = "profile pic"
+                            style="width: 100px; height: 100px; border-radius: 50%; border: 1px solid rgb(196, 195, 195);
+                            margin-left: 50px;
+                            margin-right: 50px;"
+                        >
+                    </div>
+
+                    <!-- and then this is the bio stuff:-->
+                    <div 
+                    style = "display: flex; flex-direction: row; align-items: flex-start; flex-wrap: wrap;
+                    margin-left: 0px; margin-top: 80px;
+                    width: 315px;">
+                        <body>
+                            suhanii_t 
+                        </body>
+    
+                        <button 
+                        style = "margin-left: 15px; 
+                        font-family: 'Poppins', 'Proxima Nova', 'Montserrat', sans-serif; 
+                        font-size: x-small;
+                        font-weight: bold;
+                        background-color: solid rgb(196, 195, 195);
+                        border: 0px;
+                        padding: 5px;">
+                            Edit profile
+                        </button>
+    
+                        <button 
+                        style = "margin-left: 15px; 
+                        font-family: 'Poppins', 'Proxima Nova', 'Montserrat', sans-serif; 
+                        font-size: x-small;
+                        font-weight: bold;
+                        background-color: solid rgb(196, 195, 195);
+                        border: 0px;
+                        padding: 5px;">
+                            View archive
+                        </button>
+    
+                        <img
+                        src = "instagram-settings.png"
+                        height="20px"
+                        width="20px"
+                        style="margin-left: 15px; margin-right: 50px;">
+
+                        
+                        <div style="font-size: xx-small; margin-right: 40px; font-weight: bold;">4 posts</div>
+                        <div style="font-size: xx-small; margin-right: 40px; font-weight: bold;">1000 followers</div>
+                        <div style="font-size: xx-small; margin-right: 40px; font-weight: bold; margin-right: 85px;">989 following</div>
+
+                        <div style="font-size: xx-small; font-weight: bolder; margin-right: 5px;">
+                            suhani!
+                        </div>
+                        <div style="font-size: xx-small; color: gray; margin-right: 200px;">
+                            she/her
+                        </div><br>
+                        <div style="font-size: xx-small;">
+                            this is my first ever html project! 
+                        </div>
+    
+                    </div>
+                   
+                </div>
+                
+
+                <div class="posts">
+                    <img src="matcha.jpeg"
+                    height="200px"
+                    width="150px"
+                    style="padding: 5px;">
+                    <img src="med-deli.jpeg"
+                    height="200px"
+                    width="150px"
+                    style="padding: 5px;">
+                    <img src="jolie.jpeg"
+                    height="200px"
+                    width="150px"
+                    style="padding: 5px;">
+                    <img src="italian.jpeg"
+                    height="200px"
+                    width="150px"
+                    style="padding: 5px;">
+                    <img src="smoothie-bowl.jpeg"
+                    height="200px"
+                    width="150px"
+                    style="padding: 5px;">
+                </div>
 
             </div>
         </div>
